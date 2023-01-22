@@ -5,7 +5,4 @@ led = machine.Pin(25, machine.Pin.OUT)
 
 def recieve():
     value = p0.value()
-    if(value == False):
-        led(False)                                         #type: ignore
-    else:
-        led(True)                                       #type: ignore                               
+    led(value)                          
